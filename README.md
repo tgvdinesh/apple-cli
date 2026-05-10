@@ -2,7 +2,7 @@
 
 A unified command-line interface for Apple's built-in apps — Reminders, Calendar, and Notes — on macOS.
 
-No dependencies. Pure Swift using EventKit and AppleScript.
+No dependencies. Pure Swift using AppleScript — no EventKit, no TCC prompts for the binary.
 
 ## Requirements
 
@@ -26,11 +26,7 @@ make build
 
 ## Permissions
 
-On first run, macOS will prompt for access to Reminders and Calendar. Grant access in:
-
-> System Settings → Privacy & Security → Reminders / Calendars
-
-Notes access is handled via AppleScript — no separate permission needed.
+All three domains use AppleScript — permissions are handled by the Reminders, Calendar, and Notes apps themselves. No binary-level TCC approval needed.
 
 ## Usage
 
@@ -98,7 +94,7 @@ apple notes search "recipe"
 
 ## Why
 
-macOS ships with powerful apps — Reminders, Calendar, Notes — but there's no first-party CLI to script them. This tool fills that gap for automation, AI agents, and shell workflows.
+macOS ships with powerful apps — Reminders, Calendar, Notes — but there's no first-party CLI to script them. This tool fills that gap for automation, scripting, and shell workflows.
 
 ## License
 
