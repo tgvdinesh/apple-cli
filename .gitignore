@@ -1,0 +1,4 @@
+apple
+*.o
+*.d
+.DS_Store
